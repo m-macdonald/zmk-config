@@ -27,7 +27,7 @@
 
             activate_qwerty {
                 bindings = <&tog 5>;
-                key-positions = <44 43 42 41>;
+                key-positions = <19 20 21 22>;
                 timeout-ms = <50>;
                 slow-release;
             };
@@ -43,8 +43,8 @@
                     // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
                     //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                     bindings = <
-                       &kp TAB   &kp Q         &kp W          &kp F        &kp P           &kp B         &kp J      &kp L         &kp U         &kp Y       &kp SINGLE_QUOTE    &kp BSPC
-                       &kp LCTRL &hm LGUI A    &hm LALT R     &hm LCTRL S  &hm LSHFT T     &kp G         &kp M      &hm LSHFT N   &hm LCTRL E   &hm LALT I  &hm LEFT_GUI O      &kp SQT
+                       &kp TAB   &kp Q         &kp W          &kp F        &kp P           &kp B         &kp J      &kp L         &kp U         &kp Y               &kp SINGLE_QUOTE    &kp BSPC
+                       &kp LCTRL &hm LGUI A    &hm LALT R     &hm LCTRL S  &hm LSHFT T     &kp G         &kp M      &hm LSHFT N   &hm LCTRL E   &hm LALT I          &hm LEFT_GUI O      &kp SQT
                        &kp LSHFT &kp Z &kp X   &kp C          &kp D        &kp V           &kp K         &kp H      &kp COMMA     &kp DOT       &kp FSLH            &kp ESC
                                                               &kp ESC      &lt 4 TAB       &lt 1 SPACE   &lt 3 BSPC &lt 2 RET     &kp DELETE
                     >;
@@ -52,16 +52,16 @@
 
                 layer_NAV {
                     bindings = <
-                        &none    &none    &none    &none     &none     &none        &none    &kp K_AGAIN    &kp K_PASTE    &kp K_COPY    &kp K_CUT    &kp K_UNDO    &none
-                        &none    &kp LGUI &kp LALT &kp LCTRL &kp LSHFT &none        &none    &kp CAPS       &kp LEFT       &kp DOWN      &kp UP       &kp RIGHT     &none
-                        &none    &none    &none    &none    &none      &none        &none    &kp INS        &kp HOME       &kp PAGE_DOWN &kp PAGE_UP  &kp END       &none
+                        &none    &none    &none    &none     &none     &none        &kp K_AGAIN    &kp K_PASTE    &kp K_COPY    &kp K_CUT    &kp K_UNDO    &none
+                        &none    &kp LGUI &kp LALT &kp LCTRL &kp LSHFT &none        &kp CAPS       &kp LEFT       &kp DOWN      &kp UP       &kp RIGHT     &none
+                        &none    &none    &none    &none    &none      &none        &kp INS        &kp HOME       &kp PAGE_DOWN &kp PAGE_UP  &kp END       &none
                                                    &trans   &trans     &trans       &trans   &trans         &trans
                     >;
                 };
 
                 layer_NUMBER {
                     bindings = <
-                        &none    &kp LBRC    &kp N7    &kp N8    &kp N9    &kp RBRC        &none    &none      &none      &none     &none     &none
+                        &none    &kp LBRC    &kp N7    &kp N8    &kp N9    &kp RB          &none    &none      &none      &none     &none     &none
                         &none    &kp SEMI    &kp N4    &kp N5    &kp N6    &kp EQUAL       &none    &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &none
                         &none    &kp GRAVE   &kp N1    &kp N2    &kp N3    &kp BSLH        &none    &none      &none      &kp COMMA &kp DOT   &none
                                                        &trans    &kp MINUS &kp N0          &trans   &trans     &trans
