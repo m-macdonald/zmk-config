@@ -21,11 +21,11 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <100>;
-            flavor = "tap-unless-interrupted";
+            tapping-term-ms = <150>;
+            flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
 
-            hold-trigger-key-positions = <19 20 22 21>;
+            quick-tap-ms = <0>;
         };
 
         num_layer_toggle: num_layer_toggle {
@@ -67,10 +67,10 @@
         ltm: layer_toggle_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TOGGLE_MODS";
-            bindings = <&lt>, <&kp>;
+            bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
-            quick-tap-ms = <150>;
+            quick-tap-ms = <200>;
             flavor = "tap-preferred";
             tapping-term-ms = <150>;
         };
