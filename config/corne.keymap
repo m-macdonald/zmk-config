@@ -28,42 +28,6 @@
             quick-tap-ms = <0>;
         };
 
-        num_layer_toggle: num_layer_toggle {
-            compatible = "zmk,behavior-tap-dance";
-            label = "NUM_LAYER_TOGGLE";
-            #binding-cells = <0>;
-            bindings = <&lt 2 BACKSPACE>, <&kp BACKSPACE>;
-
-            tapping-term-ms = <150>;
-        };
-
-        nav_layer_toggle: nav_layer_toggle {
-            compatible = "zmk,behavior-tap-dance";
-            label = "NAV_LAYER_TOGGLE";
-            #binding-cells = <0>;
-            bindings = <&lt 1 SPACE>, <&kp SPACE>;
-
-            tapping-term-ms = <150>;
-        };
-
-        media_layer_toggle: media_layer_toggle {
-            compatible = "zmk,behavior-tap-dance";
-            label = "MEDIA_LAYER_TOGGLE";
-            #binding-cells = <0>;
-            bindings = <&lt 4 TAB>, <&kp TAB>;
-
-            tapping-term-ms = <150>;
-        };
-
-        fun_layer_toggle: fun_layer_toggle {
-            compatible = "zmk,behavior-tap-dance";
-            label = "FUN_LAYER_TOGGLE";
-            #binding-cells = <0>;
-            bindings = <&lt 3 ENTER>, <&kp ENTER>;
-
-            tapping-term-ms = <150>;
-        };
-
         ltm: layer_toggle_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TOGGLE_MODS";
